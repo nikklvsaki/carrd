@@ -1,0 +1,214 @@
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 97vh;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  z-index: 0;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
+.embed-blanco{
+    background-color: white;
+    position: fixed;
+    width: 67%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 500px #e82121;
+
+}
+
+
+.text-home {
+
+    width: 50%;
+    position: absolute;
+   
+     display: flex;
+  flex-direction: column; /* o row si querés que estén en fila */
+  gap: 17px; /* ajustá este valor a tu gusto */
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+
+  align-items: center; 
+
+}
+
+
+.imagen {
+    /*background-color: brown;*/
+    width: 50%;
+    height: 50vh;
+    overflow: visible;
+
+
+}
+
+.mio-guit {
+    position: absolute;
+    top: -40px;
+    right: -15px;
+    width: 46%;
+    height: auto;
+    z-index: 1;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 70vh;
+    border-radius: 3rem;
+
+}
+
+.flor {
+    position: absolute;
+    bottom: -160px;
+    right: -520px;
+    z-index: -1;
+    overflow: hidden;
+    width: 120%;
+    height: auto;
+    animation: spin 10s linear infinite;
+    opacity: 95%;
+ 
+
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.flor-cont {
+
+
+    position: relative;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+}
+
+.nikk {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-left: 65%;
+    margin-top: -11%;
+    font-weight: 700;
+    font-size: 4vh;
+    
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pepita 5s infinite;
+    text-shadow: 2px 2px #000000;
+    opacity: 90%;
+}
+
+.cat {
+    padding-left: 10%;
+    margin-top: -4%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kitty {
+  margin: 0;
+    width: 60%;
+    height: auto;
+}
+
+
+.pop {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: medium;
+    margin-left: 8%;
+
+   font-size: medium;
+  margin: 0;
+  
+}
+.me1 {
+  font-size: 3rem;
+  margin: 0;
+ animation: pepita 5s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+@keyframes pepita {
+  0% { background-color: #8d0d0d; }
+  16.67% { background-color: #a71d1d; }
+  33.34% { background-color: #cb2828; }
+  50.01% { background-color: #e82121; }
+  66.68% { background-color: #cb2828; }
+  83.35% { background-color: #a71d1d; }
+  100% { background-color: #8d0d0d; }
+}
+.btn {
+  /* ya lo tenés configurado bien */
+  animation: pepita 5s infinite;
+  background-color: #8d0d0d;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, color 0.3s;
+  z-index: 1;
+  position: relative;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  color: #e82121;
+  animation: glow 1.5s infinite;
+}
+
+

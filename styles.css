@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 95%;
+}
+
+/* Contenido principal encima */
+.container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-bottom: 20%;
+}
+
+.profile-img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+  box-shadow: 0 0 500px #CC0006;
+  border: 5px solid #CC0006;
+}
+
+.title {
+  font-size: 35px;
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Pixelify Sans", sans-serif;
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pepita 5s infinite;
+  opacity: 90%;
+  -webkit-text-stroke: 0.7px black;
+  /* ancho del borde y color */
+}
+
+@keyframes pepita {
+  0% {
+    background-color: #8d0d0d;
+  }
+
+  16.67% {
+    background-color: #a71d1d;
+  }
+
+  33.34% {
+    background-color: #cb2828;
+  }
+
+  50.01% {
+    background-color: #e82121;
+  }
+
+  66.68% {
+    background-color: #cb2828;
+  }
+
+  83.35% {
+    background-color: #a71d1d;
+  }
+
+  100% {
+    background-color: #8d0d0d;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px #CC0006;
+  }
+
+  50% {
+    box-shadow: 0 0 20px #8d0d0d;
+  }
+}
+
+.btn-container {
+  position: relative;
+}
+
+.btn {
+  animation: pepita 5s infinite;
+  background-color: #8d0d0d;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 25px;
+  font-size: 16px;
+  /* tamaño ajustable del texto y emoji */
+
+  color: black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, color 0.3s;
+  z-index: 1;
+  position: relative;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  color: #e82121;
+  /* cambia el texto y emoji a rosa */
+  animation: glow 1.5s infinite;
+}
+
+.hover-img {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22vw;
+  height: auto;
+  border: 5px solid #e82121;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.hover-img.animation {
+  animation-name: transition;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  position: absolute;
+}
+
+.btn-container:hover .hover-img {
+  opacity: 1;
+}
+
+@keyframes transition {
+
+  from {
+    width: 22vw;
+  }
+
+  to {
+    width: 100vw;
+    top: 0;
+    right: 0;
+  }
+
+}
