@@ -1,11 +1,22 @@
+/** @param {HTMLElement} element */
 function transition(element, href) {
+    const top = element.y;
+    const left = element.x;
+    const right = window.innerWidth - (left + element.clientWidth);
+    const width = element.clientWidth;
 
-    element.style.animationName = "transition"
-    element.classList.add("animation")
+    element.setAttribute("style", `--pre-top: ${top}px; --pre-left: ${left}px; --pre-right: ${right}px; --pre-width: ${width}px;`);
+
+    element.classList.add("animation");
+
+    const prefetch = document.createElement("link");
+    prefetch.rel = "prefetch";
+    prefetch.href = href;
+    document.getElementsByTagName("head")[0].appendChild(prefetch)
+
     setTimeout(function () {
         window.location.href = href
-    }, 2000)
-
+    }, 1000)
 }
 
 let boton1 = document.getElementById("btn1")

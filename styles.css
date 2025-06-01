@@ -142,13 +142,15 @@
   pointer-events: none;
   transition: opacity 0.3s;
   z-index: 2;
+  box-sizing: content-box;
 }
 
 .hover-img.animation {
   animation-name: transition;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
-  position: absolute;
+  position: fixed;
+  opacity: 1;
 }
 
 .btn-container:hover .hover-img {
@@ -156,15 +158,24 @@
 }
 
 @keyframes transition {
-
   from {
-    width: 22vw;
+    top: var(--pre-top);
+    left: var(--pre-left);
+    right: var(--pre-right);
+    width: var(--pre-width);
+  }
+
+  50% {
+    transform: translateX(0%);
   }
 
   to {
     width: 100vw;
+    height: auto;
     top: 0;
+    left: 0;
     right: 0;
+    bottom: 0%;
+    transform: translate(0%);
   }
-
 }
