@@ -94,8 +94,8 @@ canvas {
 
 .flor {
     position: absolute;
-    bottom: -160px;
-    right: -520px;
+    bottom: -190px;
+    right: -550px;
     z-index: -1;
     overflow: hidden;
     width: 120%;
@@ -209,6 +209,308 @@ canvas {
   transform: scale(1.05);
   color: #e82121;
   animation: glow 1.5s infinite;
+}
+
+
+
+
+
+@media (max-width: 624px){
+.column-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .text-home {
+    width: 70%;
+    position: static;
+margin-top: 30%;
+    gap: 10px;
+  }
+
+  .imagen {
+    width: 80%;
+    height: auto;
+    margin-left: 23%;
+  }
+
+  .mio-guit {
+    position: relative;
+    width: 80%;
+    top: 0;
+    right: -20%;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+
+  .embed-blanco {
+    width: 90%;
+    height: auto;
+    border-radius: 2rem;
+    padding: 20px;
+  }
+
+  .nikk {
+    font-size: 1.6rem;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .me1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .pop {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+.flor-cont{
+  width: 90%;
+margin-left: -800px;
+}
+
+
+
+}
+
+@media (min-width: 625px) and (max-width: 650px){
+.column-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .text-home {
+    width: 60%;
+    position: static;
+margin-top: 0;
+    gap: 5px;
+    height: 10%;
+  }
+
+  .imagen {
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+    
+  }
+
+  .mio-guit {
+    position: relative;
+    width: 85%;
+    right: 0;
+    margin-top: 110px;
+    margin-left: 20%;
+  }
+
+  .embed-blanco {
+    width: 80%;
+    height: 90%;
+    border-radius: 2rem;
+    padding: 20px;
+  }
+
+  .nikk {
+    font-size: 1.6rem;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .me1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .pop {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+.flor-cont{
+  width: 80%;
+margin-left: -130%;
+margin-top: -40%;
+}
+
+
+  
+}
+
+@media (min-width: 651px) and (max-width: 800px){
+.column-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .text-home {
+    width: 60%;
+    position: static;
+margin-top: 0;
+    gap: 5px;
+    height: 10%;
+  }
+
+  .imagen {
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+  }
+
+  .mio-guit {
+    position: relative;
+    width: 85%;
+    right: 0;
+    margin-top: 100px;
+    margin-left: 20%;
+  }
+
+  .embed-blanco {
+    width: 80%;
+    height: 90%;
+    border-radius: 2rem;
+    padding: 20px;
+  }
+
+  .nikk {
+    font-size: 1.6rem;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .me1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .pop {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+.flor-cont{
+  width: 80%;
+margin-left: -130%;
+margin-top: -40%;
+}
+
+
+  
+}
+
+
+@media (min-width: 801px) and (max-width: 1000px){
+.column-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .text-home {
+    width: 60%;
+    position: static;
+margin-top: 0;
+    gap: 5px;
+    height: 10%;
+  }
+
+  .imagen {
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+  }
+
+  .mio-guit {
+    position: relative;
+    width: 70%;
+    right: 0;
+    margin-top: 100px;
+    margin-left: 25%;
+  }
+
+  .embed-blanco {
+    width: 80%;
+    height: 90%;
+    border-radius: 2rem;
+    padding: 20px;
+  }
+
+  .nikk {
+    font-size: 1.6rem;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .me1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .pop {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+.flor-cont{
+  width: 80%;
+margin-left: -75%;
+margin-top: -20%;
+}
+
+
+  
+}
+
+@media (min-width: 1001px) and (max-width: 1100px){
+
+ .imagen {
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+  }
+
+  .mio-guit {
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin-top: 100px;
+    margin-left: 70%;
+  }
+
+  .flor-cont{
+  width: 60%;
+margin-left: -85%;
+margin-top: -20%;
+}
+
+  
 }
 
 
