@@ -225,7 +225,7 @@ canvas {
   .text-home {
     width: 70%;
     position: static;
-margin-top: 30%;
+margin-top: 10%;
     gap: 10px;
   }
 
@@ -500,7 +500,7 @@ margin-top: -20%;
     position: relative;
     width: 100%;
     right: 0;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 70%;
   }
 
@@ -511,6 +511,28 @@ margin-top: -20%;
 }
 
   
+}
+
+@media (min-width: 1101px){
+  .imagen {
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+  }
+
+  .mio-guit {
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin-top: 80px;
+    margin-left: 120%;
+  }
+
+  .flor-cont{
+  width: 50%;
+margin-left: -50%;
+margin-top: -20%;
+}
 }
 
 
